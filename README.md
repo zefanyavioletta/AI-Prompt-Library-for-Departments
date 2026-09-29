@@ -107,7 +107,7 @@ Generate distinct copy for the following three formats:
 
 ### Finance & Supply Chain
 
-**Template Name:** Unstructured Text to Formatted Data
+* **Template Name:** Unstructured Text to Formatted Data
 
 **Primary Function:** Extracts operational data from unstructured sources (emails, vendor notes, chat logs) and converts it into spreadsheet-ready tables.
 
@@ -135,6 +135,36 @@ Rules:
 - Ensure numbers and currency are standardized.
 - Do not include any introductory or concluding text outside the table.
 ```
+* **Template Name:** Vendor Delivery Risk & Anomaly Assessment
+
+**Primary Function:** Review the provided logistics notes or tracking logs and identify potential delivery risks, operational impacts, and suggested mitigation steps.
+
+**Recommended Models:** Claude, ChatGPT, or Copilot
+
+```text
+[ROLE]
+You are a Supply Chain Risk Analyst monitoring vendor performance and fulfillment timelines.
+
+[TASK]
+Review the provided logistics notes or tracking logs and identify potential delivery risks, operational impacts, and suggested mitigation steps.
+
+[CONTEXT]
+Purchase Order / Shipment Ref: [Insert PO or Tracking Number]
+Vendor Name: [Insert Vendor Name]
+Logistics Status / Tracking Notes:
+---
+[Paste shipment tracking logs, email status updates, or delay notices here]
+---
+
+[OUTPUT FORMAT]
+Provide a structured assessment as follows:
+
+1. Risk Summary: 2 sentences explaining the current delay or status.
+2. Impact Severity: Classify as High, Medium, or Low with a brief justification.
+3. Identified Bottlenecks: Bulleted list of root causes indicated in the log.
+4. Recommended Actions: Bulleted list of immediate steps for the logistics team (e.g., rerouting, contacting alternate suppliers, updating inventory timelines).
+```
+
 
 ---
 
