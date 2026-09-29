@@ -1,7 +1,7 @@
 # Departmental AI Prompt Library & Best Practices
 
 An Educational Framework for Practical Workplace Automation
-A curated repository of structured prompt templates and guidelines designed to help non-technical teams (Operations, HR, Marketing, Finance, and Supply Chain) apply Generative AI to daily business workflows safely and effectively.
+A curated repository of structured prompt templates and guidelines designed to help teams (Operations, HR, Marketing, Finance, and Supply Chain) apply AI to daily business workflows safely and effectively.
 
 ---
 
